@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(data => {
             data.results.forEach(nombre => {
-                const añadirNombre = document.createElement('li'); // Corrección: 'li' debe estar entre comillas
-                añadirNombre.textContent = nombre.name; // Corrección: Usar nombre.name para obtener el nombre del Pokémon
+                const añadirNombre = document.createElement('li'); 
+                añadirNombre.textContent = nombre.name; 
                 nombrePokemon.appendChild(añadirNombre);
             });
         })
